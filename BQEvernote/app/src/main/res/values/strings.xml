@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">BQ Evernote</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="login_button">Login</string>
+
+    <string name="note_title">Titulo</string>
+    <string name="note_content">Contenido</string>
+    <string name="create_new_note">Crear nueva nota</string>
+    <string name="create">Crear</string>
+    <string name="add_note">Añadir nota</string>
+    <string name="empty">Empty %s</string>
+    <string name="notes">Notas</string>
+    <string name="evernote_not_installed">Evernote no está instalada.</string>
+    <string name="label_logout">Cerrar sesión</string>
+
+    <string name="sort_by_title">Ordenar por el título</string>
+    <string name="sot_by_date">Ordenar por fecha de creación</string>
+
+
+</resources>
