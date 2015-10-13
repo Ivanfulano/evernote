@@ -30,7 +30,6 @@ import com.evernote.android.intent.EvernoteIntent;
 import com.evernote.client.android.EvernoteSession;
 import com.evernote.client.android.asyncclient.EvernoteClientFactory;
 import com.evernote.client.android.type.NoteRef;
-import com.evernote.edam.notestore.NoteFilter;
 import com.evernote.edam.type.LinkedNotebook;
 import com.evernote.edam.type.Note;
 import com.evernote.edam.type.NoteSortOrder;
@@ -149,30 +148,13 @@ public class NoteListFragment extends Fragment {
     }
 
     private void sortByTitle() {
-        NoteFilter noteFilter = new NoteFilter();
         new FindNotesTask(0, MAX_NOTES, mNotebook, mLinkedNotebook, mQuery, NoteSortOrder.TITLE.getValue()).start(this);
         mQuery = null;
-//        List<NoteRef> mNoteRefListTemp = new ArrayList<NoteRef>();
-//        mNoteRefListTemp = getArguments().getParcelableArrayList(KEY_NOTE_LIST);
-//        Collections.sort(mNoteRefListTemp, new Comparator<NoteRef>() {
-//            public int compare(NoteRef result1, NoteRef result2) {
-//                return result1.getTitle().compareTo(result2.getTitle());
-//            }
-//        });
-//
-//        mAdapter = new MyAdapter();
-//
-//        mListView.setAdapter(mAdapter);
     }
 
     private void sortByDate() {
-        NoteFilter noteFilter = new NoteFilter();
         new FindNotesTask(0, MAX_NOTES, mNotebook, mLinkedNotebook, mQuery, NoteSortOrder.UPDATED.getValue()).start(this);
         mQuery = null;
-//        mNoteRefList = getArguments().getParcelableArrayList(KEY_NOTE_LIST);
-//        mAdapter = new MyAdapter();
-//
-//        mListView.setAdapter(mAdapter);
     }
 
     @TaskResult
