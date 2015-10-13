@@ -18,7 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-            <include layout="@layout/fragment_abastract_container_header"/>
+            <include layout="@layout/fragment_abastract_container_add"/>
 
         </android.support.design.widget.CoordinatorLayout>
 
